@@ -1,0 +1,28 @@
+{
+	"name": "AdicionaColuna",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
+					"name": "dadosvendablob"
+				}
+			],
+			"sinks": [
+				{
+					"name": "vendacomimposto"
+				}
+			],
+			"transformations": [
+				{
+					"name": "ColunaDerivada1"
+				}
+			],
+			"script": "source(output(\n\t\t{codigo;codigo_venda;descricao;quantidade;data_da_venda;ID_cliente;ID_vendedor;preco} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\twildcardPaths:['\\'']) ~> dadosvendablob\ndadosvendablob derive(imposto = multiply(preco, 0,05)) ~> ColunaDerivada1\nColunaDerivada1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> vendacomimposto"
+		}
+	}
+}
