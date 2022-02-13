@@ -47,7 +47,7 @@
 				]
 			},
 			{
-				"name": "Copy data2",
+				"name": "CopyAWS",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
