@@ -1,0 +1,18 @@
+{
+	"name": "BinaryAWS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AmazonS32",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "buckettreino12022022awsazuregcp",
+				"fileName": "dados_vendas_aws.csv"
+			}
+		}
+	}
+}
