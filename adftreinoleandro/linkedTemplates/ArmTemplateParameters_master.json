@@ -8,13 +8,13 @@
 		"AmazonS31_secretAccessKey": {
 			"value": ""
 		},
-		"GoogleCloudStorage1_secretAccessKey": {
-			"value": ""
-		},
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
 		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"GoogleCloudStorage1_secretAccessKey": {
 			"value": ""
 		},
 		"AmazonS31_properties_typeProperties_accessKeyId": {
