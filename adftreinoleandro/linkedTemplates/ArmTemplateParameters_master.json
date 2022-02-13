@@ -14,7 +14,19 @@
 		"AzureBlobStorage2_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
 		"GoogleCloudStorage1_secretAccessKey": {
+			"value": ""
+		},
+		"AzureBlobStorage4_connectionString": {
+			"value": ""
+		},
+		"AmazonS32_secretAccessKey": {
+			"value": ""
+		},
+		"AzureBlobStorage5_connectionString": {
 			"value": ""
 		},
 		"AmazonS31_properties_typeProperties_accessKeyId": {
@@ -22,6 +34,9 @@
 		},
 		"GoogleCloudStorage1_properties_typeProperties_accessKeyId": {
 			"value": "807718475876-a9fhantg1ojqiv3ashr05qjuhm8tfn0e"
+		},
+		"AmazonS32_properties_typeProperties_accessKeyId": {
+			"value": "AKIAX3WGM47JZ7OBMXEH"
 		},
 		"containerUri": {
 			"value": ""

@@ -19,9 +19,25 @@
 			"type": "secureString",
 			"metadata": "Cadeia de caracteres segura para 'connectionString' de 'AzureBlobStorage2'"
 		},
+		"AzureBlobStorage3_connectionString": {
+			"type": "secureString",
+			"metadata": "Cadeia de caracteres segura para 'connectionString' de 'AzureBlobStorage3'"
+		},
 		"GoogleCloudStorage1_secretAccessKey": {
 			"type": "secureString",
 			"metadata": "Cadeia de caracteres segura para 'secretAccessKey' de 'GoogleCloudStorage1'"
+		},
+		"AzureBlobStorage4_connectionString": {
+			"type": "secureString",
+			"metadata": "Cadeia de caracteres segura para 'connectionString' de 'AzureBlobStorage4'"
+		},
+		"AmazonS32_secretAccessKey": {
+			"type": "secureString",
+			"metadata": "Cadeia de caracteres segura para 'secretAccessKey' de 'AmazonS32'"
+		},
+		"AzureBlobStorage5_connectionString": {
+			"type": "secureString",
+			"metadata": "Cadeia de caracteres segura para 'connectionString' de 'AzureBlobStorage5'"
 		},
 		"AmazonS31_properties_typeProperties_accessKeyId": {
 			"type": "string",
@@ -30,6 +46,10 @@
 		"GoogleCloudStorage1_properties_typeProperties_accessKeyId": {
 			"type": "string",
 			"defaultValue": "807718475876-a9fhantg1ojqiv3ashr05qjuhm8tfn0e"
+		},
+		"AmazonS32_properties_typeProperties_accessKeyId": {
+			"type": "string",
+			"defaultValue": "AKIAX3WGM47JZ7OBMXEH"
 		},
 		"containerUri": {
 			"type": "string",
@@ -67,14 +87,29 @@
 					"AzureBlobStorage2_connectionString": {
 						"value": "[parameters('AzureBlobStorage2_connectionString')]"
 					},
+					"AzureBlobStorage3_connectionString": {
+						"value": "[parameters('AzureBlobStorage3_connectionString')]"
+					},
 					"GoogleCloudStorage1_secretAccessKey": {
 						"value": "[parameters('GoogleCloudStorage1_secretAccessKey')]"
+					},
+					"AzureBlobStorage4_connectionString": {
+						"value": "[parameters('AzureBlobStorage4_connectionString')]"
+					},
+					"AmazonS32_secretAccessKey": {
+						"value": "[parameters('AmazonS32_secretAccessKey')]"
+					},
+					"AzureBlobStorage5_connectionString": {
+						"value": "[parameters('AzureBlobStorage5_connectionString')]"
 					},
 					"AmazonS31_properties_typeProperties_accessKeyId": {
 						"value": "[parameters('AmazonS31_properties_typeProperties_accessKeyId')]"
 					},
 					"GoogleCloudStorage1_properties_typeProperties_accessKeyId": {
 						"value": "[parameters('GoogleCloudStorage1_properties_typeProperties_accessKeyId')]"
+					},
+					"AmazonS32_properties_typeProperties_accessKeyId": {
+						"value": "[parameters('AmazonS32_properties_typeProperties_accessKeyId')]"
 					}
 				}
 			},
